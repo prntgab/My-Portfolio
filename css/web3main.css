@@ -128,7 +128,7 @@ main {
 .buttons label{
   width: 70px;
   height: 70px;
-  background: rgba(251, 255, 18, 0.582);
+  background: rgb(18, 255, 196);
   opacity: 0.5;
   border-radius: 50px;
   transition: 0.5s;
