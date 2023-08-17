@@ -28,7 +28,7 @@
 			<p>I am <span>Gab Pirante</span> </p>
 			<h1>A Production Layout Artist</h1>
 			<p class="p1">at your service</p>
-			<button>
+			<button id="downloadButton">
 				Download CV
 			</button>
 		</section1>
@@ -42,7 +42,7 @@
 			<p class="aboutme"><span>About</span> Me </p>
 			<h1>Hardworker that gives Importance to learning</h1>
 			<p class="mp1">Enjoys the graphic design industry</p>
-			<button>
+			<button id="downloadButton">
 				Download CV
 			</button>
 		</section1>
@@ -98,5 +98,23 @@
 			<p>Note that the owner design this purely CSS</p>
 		</div>
 	</footer>
+
+	<script>
+		document.getElementById("downloadButton").addEventListener("click", function() {
+    
+    var fileURL = "https://drive.google.com/file/d/1qKJK3U0XUxkcuGRPw_Ekkydr25jwJiYY/view?usp=sharing";
+    
+  
+    var anchor = document.createElement("a");
+    anchor.href = fileURL;
+    anchor.download = "GabrielCV.pdf"; 
+    
+    document.body.appendChild(anchor);
+    anchor.click();
+    
+    
+    document.body.removeChild(anchor);
+		});
+	</script>
 </body>
 </html>
